@@ -1,0 +1,31 @@
+---
+#
+# Azure Service Principle Details
+#
+
+# Uncomment the following to set
+#subscription_id:
+#client_secret:
+#client_id:
+#client_tenant:
+
+#
+# Azure Container Registry Details
+# The following variables are used to create a container registry
+#
+
+# Uncomment the following to set
+#resource_group:
+#location:
+#sku:
+#acr_name:
+
+#
+# Build parameters
+#
+
+# Uncomment the following to set
+build_dir: "{{ playbook_dir }}"
+image_name: "ansible"
+image_tag: "latest"
+...

@@ -3,7 +3,6 @@ FROM mcr.microsoft.com/azure-pipelines/vsts-agent
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
-    ansible \
     python3-pip \
     gcc \
     make \
@@ -12,6 +11,9 @@ RUN apt-get update && apt-get install -y \
     nodejs \
     npm \
     yarn
+
+# Install Ansible
+RUN pip3 install ansible
 
 RUN ansible-galaxy collection install azure.azcollection
 RUN pip3 install --no-cache-dir --prefer-binary azure-cli==2.34.0

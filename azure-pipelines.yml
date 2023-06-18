@@ -11,7 +11,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'd252d760-154d-4b9a-b420-1df36b0d6396'
-  imageRepository: 'adamfordyceansibleazureee'
+  imageRepository: 'ansibleazureee'
   containerRegistry: 'afansibleacr.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
